@@ -26,10 +26,28 @@ for line in f:
 
 f.close()
 
+holiday_file = open('chicago_observed_holidays')
+holidays=[]
+
+for line in holiday_file:
+
+    line = line.strip('\n')
+
+    if line.startswith("#"):
+        continue
+    if line.__eq__(''):
+        continue
+
+
+    format_str = '%A %B %d %Y'
+    print line
+    holiday = datetime.strptime(line, format_str)
+    holidays.append(holiday.date())
+
 
 A = [d[1].date() for d in data]
 B = [d[2].date() for d in data]
-delta_bdays = np.busday_count(A,B)
+delta_bdays = np.busday_count(A,B,holidays=holidays)
 
 for i in xrange(0,len(data)):
     #Give CPD the benefit of the doubt
