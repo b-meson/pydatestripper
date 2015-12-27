@@ -4,4 +4,4 @@ I recently received a log of every single FOIA request that Chicago Police Depar
 
 tl;dr how often is CPD out of compliance with FOIA law.
 with example dataset returns, including some erroneous entries:
-compliant:  12709  Non Compliant >5 days:  3046 
+compliant:  13636  Non Compliant >5 days:  2119  Percent violated:  13.4496985084
