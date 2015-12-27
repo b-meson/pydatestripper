@@ -1,13 +1,8 @@
-import pandas as pd
 import numpy as np
-import csv
-import datetime
-
 from datetime import datetime
 
-
 f = open('data.csv', 'r')
-#tuple of foianum, requestdate, duedate, executeddate, deltadays, compliant
+
 output=[]
 compliant_count = 0
 non_compliant_count = 0
