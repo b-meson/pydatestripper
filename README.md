@@ -1,4 +1,4 @@
-# Authors: Freddy Martinez & Joseph Burnitz
+### Authors: Freddy Martinez & Joseph Burnitz
 
 # Python Date Stripper
 
